@@ -13,7 +13,7 @@ const Marquee = async () => {
   "use cache";
 
   const res = await fetch(
-    "https://api.api-store.workers.dev/api/bazardor/products",
+    "https://openapi.programming-hero.com/api/bazardor/products",
   );
 
   const data: IProduct[] = await res.json();

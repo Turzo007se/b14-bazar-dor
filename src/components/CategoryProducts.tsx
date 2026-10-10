@@ -10,9 +10,9 @@ const CategoryProducts = async ({ category }: CategoryProductsProps) => {
 
   const [productsRes, categoriesRes] = await Promise.all([
     fetch(
-      `https://api.api-store.workers.dev/api/bazardor/products?category=${encodeURIComponent(category)}`,
+      `https://openapi.programming-hero.com/api/bazardor/products?category=${encodeURIComponent(category)}`,
     ),
-    fetch("https://api.api-store.workers.dev/api/bazardor/categories"),
+    fetch("https://openapi.programming-hero.com/api/bazardor/categories"),
   ]);
 
   if (!productsRes.ok) {
